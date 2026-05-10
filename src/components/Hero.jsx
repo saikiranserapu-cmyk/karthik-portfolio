@@ -147,6 +147,7 @@ export const Hero = () => {
         {/* Buttons - Web Tug effect */}
         <motion.div variants={dropInVariants} className="flex gap-4 mb-16 relative z-20">
           <motion.button
+            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 500, damping: 5 } }}
             whileTap={{ scale: 0.95 }}
             className="group relative px-8 py-3 bg-[var(--color-spider-red)] text-white font-bold rounded overflow-hidden shadow-[0_0_15px_rgba(230,0,35,0.4)]"
@@ -158,6 +159,7 @@ export const Hero = () => {
           </motion.button>
           
           <motion.button
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             whileHover={{ scale: 1.05, transition: { type: "spring", stiffness: 500, damping: 5 } }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-3 bg-transparent border border-[var(--color-spider-gray)] text-white font-bold rounded hover:bg-[var(--color-spider-gray)] transition-colors"
