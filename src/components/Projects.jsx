@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, Terminal } from "lucide-react";
+import Image from "next/image";
 
 const projectsData = [
   {
@@ -90,14 +91,15 @@ const ProjectCard = ({ project, index }) => {
         style={{ perspective: "1000px" }}
       >
         <div 
-          className="relative rounded-xl overflow-hidden glass-panel border border-[rgba(255,255,255,0.1)] transition-transform duration-200 ease-out"
+          className="relative w-full h-[300px] md:h-[400px] rounded-xl overflow-hidden glass-panel border border-[rgba(255,255,255,0.1)] transition-transform duration-200 ease-out"
           style={{ transform: "rotateX(var(--rotate-x, 0deg)) rotateY(var(--rotate-y, 0deg))" }}
         >
           <div className="absolute inset-0 bg-[var(--color-spider-red)] opacity-20 mix-blend-overlay group-hover:opacity-0 transition-opacity duration-500 z-10" />
-          <img 
+          <Image 
             src={project.image} 
             alt={project.title} 
-            className="w-full h-[300px] md:h-[400px] object-cover filter grayscale-[50%] group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100"
+            fill
+            className="object-cover filter grayscale-[50%] group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100"
           />
         </div>
       </div>

@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Code, Terminal, Cpu } from "lucide-react";
+import Image from "next/image";
 import { SpiderWeb } from "./SpiderWeb";
 
 const ProjectCard = ({ item, crawlVariants }) => {
@@ -120,9 +121,11 @@ export const Hero = () => {
                 className="absolute inset-2 border border-white opacity-20 animate-[spin_15s_linear_infinite_reverse]"
                 style={{ clipPath: "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)" }}
               />
-              <img 
+              <Image 
                 src="/profile.jpg" 
                 alt="Profile" 
+                width={160}
+                height={160}
                 className="w-40 h-40 object-cover grayscale hover:grayscale-0 transition-all duration-500"
                 style={{ clipPath: "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)" }}
               />

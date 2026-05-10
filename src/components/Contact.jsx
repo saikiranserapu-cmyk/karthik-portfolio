@@ -48,10 +48,10 @@ export const Contact = () => {
             className="w-full lg:w-1/2"
           >
             <h2 className="text-5xl md:text-7xl font-bold font-heading text-white mb-6">
-              Let's build a <span className="text-[var(--color-spider-red)]">Web</span> together.
+              Let&apos;s build a <span className="text-[var(--color-spider-red)]">Web</span> together.
             </h2>
             <p className="text-gray-400 text-lg md:text-xl max-w-lg mb-8">
-              Whether you need a cutting-edge frontend, a robust backend, or a completely new digital experience. Drop a line and let's get connected.
+              Whether you need a cutting-edge frontend, a robust backend, or a completely new digital experience. Drop a line and let&apos;s get connected.
             </p>
             <div className="flex flex-col md:flex-row gap-8 text-gray-400">
               <div className="flex flex-col">
