@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-spider-red: #e60023;
+  --color-spider-black: #0a0a0a;
+  --color-spider-gray: #1a1a1a;
+  
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Outfit", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-spider-black);
+  color: white;
+  overflow-x: hidden;
+  font-family: var(--font-sans), sans-serif;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(26, 26, 26, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
